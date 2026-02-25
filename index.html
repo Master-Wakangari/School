@@ -2,60 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Galileo Galilei</title>
+    <title>Galileo Galilei Biography</title>
+
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+            color: #f5f5f5;
+            
+            /* Starry space background */
+            background-color: #1f1f1f;
+            background-image: radial-gradient(white 1px, transparent 1px),
+                              radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
         }
+
+        .wrapper {
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(40, 40, 40, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 1200px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(0,0,0,0.7);
+        }
+
         .container {
             display: flex;
+            gap: 60px;
             align-items: flex-start;
-            gap: 30px;
         }
+
         .text {
             flex: 2;
         }
+
         .image {
             flex: 1;
         }
+
         .image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
         }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 22px;
+            font-size: 18px;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="text">
+<div class="wrapper">
+    <div class="card">
+
         <h1>Galileo Galilei</h1>
 
-        <p><strong>He was the first space person with a telescope.</strong> Others looked at stars, but Galileo was the first to really study them with a telescope he made by himself.</p>
+        <div class="container">
 
-        <p><strong>The moon has impurities.</strong> He saw the moon wasn't a smooth ball. It was all bumpy with mountains and holes, just like Earth!</p>
+            <div class="text">
 
-        <p><strong>He found Jupiter's moons.</strong> He saw four little dots next to Jupiter and realized they were its own private moons going around it. Not everything circles us!</p>
+                <h2>Biography</h2>
 
-        <p><strong>Venus has a light switch.</strong> Galileo saw Venus change shapes, like our moon. It went from a tiny sliver to a full circle, which proved it was going around the sun.</p>
+                <p><strong>Name:</strong> Galileo Galilei</p>
 
-        <p><strong>The Milky Way is a pile of stars.</strong> He saw it was actually many stars squished together.</p>
+                <p><strong>Born/Died:</strong> He was born on February 15, 1564, and died on January 8, 1642.</p>
 
-        <p>Galileo saw dark spots on the sun (sunspots) and watched them move.</p>
+                <p><strong>Location:</strong> He was born in Pisa, Italy, and lived in Italy most of his life.</p>
 
-        <p><strong>He was curious and open minded.</strong> He drew everything he saw in a notebook. He was like a detective collecting clues about space.</p>
+                <p><strong>Education:</strong> He went to the University of Pisa. At first he studied medicine, but he liked math more, so he switched.</p>
 
-        <p><strong>He stood up to peer pressure and followed his own beliefs in astronomy.</strong> He believed the sun was the center of the solar system, not Earth. This got him in big trouble.</p>
+                <p><strong>Career:</strong> Galileo was a scientist, astronomer, and math teacher. He spent his life studying space and trying to understand how things move.</p>
 
-        <p><strong>He was a true mathematician.</strong> He used math to figure out how far away stuff was and how it moved. He said the universe was a math problem to solve.</p>
 
-        <p><strong>He was eliminated.</strong> The people at the top said he was wrong and put him under house arrest for the rest of his life for ideas and hypotheses on astronomy.</p>
-    </div>
+                <h2>Research or Discovery</h2>
 
-    <div class="image">
-        <img src="download.jpg" alt="Portrait of Galileo Galilei">
+                <p>
+                    Galileo made his own telescope and used it to look closely at space.
+                    He discovered four moons going around Jupiter.
+                    This showed that not everything goes around Earth.
+                </p>
+
+                <p>
+                    He also saw that the moon was not smooth.
+                    It had mountains and craters, just like Earth.
+                    His discoveries helped prove that the Sun is at the center of the solar system, not Earth.
+                </p>
+
+                <p>
+                    Because of Galileo’s work, scientists today use telescopes and evidence to learn about space.
+                    He helped change how people understand the universe.
+                </p>
+
+
+                <h2>Other Information (3 Fun Facts)</h2>
+
+                <ul>
+                    <li>He discovered four of Jupiter’s moons.</li>
+                    <li>He proved the Moon has mountains and craters.</li>
+                    <li>He got in trouble and was put under house arrest for saying the Sun was the center of the solar system.</li>
+                </ul>
+
+            </div>
+
+            <div class="image">
+                <!-- Working public image -->
+                <img src="download.jpg" alt="Galileo Galilei Portrait">
+            </div>
+
+        </div>
+
     </div>
 </div>
 
